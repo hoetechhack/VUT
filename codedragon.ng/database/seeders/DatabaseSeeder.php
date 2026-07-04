@@ -10,21 +10,13 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $admin = User::create([
-            'name' => 'John Admin',
-            'email' => 'info@candytech.ng',
-            'password' => bcrypt('password123'),
+            'name' => 'Admin',
+            'email' => 'admin@codedragon.ng',
+            'password' => bcrypt('CodeDragon#2026!'),
             'is_admin' => true,
             'is_verified' => true,
         ]);
-        $admin->wallet()->create(['balance' => 50000]);
-
-        $user = User::create([
-            'name' => 'Test User',
-            'email' => 'ezeobinnahumphry@gmail.com',
-            'password' => bcrypt('password123'),
-            'is_verified' => false,
-        ]);
-        $user->wallet()->create(['balance' => 0]);
+        $admin->wallet()->create(['balance' => 0]);
 
         // Default Settings
         \App\Models\Setting::create(['key' => 'monnify_base_url', 'value' => 'https://sandbox.monnify.com']);
