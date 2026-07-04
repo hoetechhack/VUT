@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CodeDragon – Fast, Secure Bill Payments in Nigeria</title>
 <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+<link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}">
 <meta name="description" content="Top up airtime, buy data, pay electricity bills, cable TV, and get exam pins instantly. CodeDragon delivers fast digital transactions at the best rates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
