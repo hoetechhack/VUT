@@ -347,7 +347,7 @@
 
   <!-- Boxed hero video (drop hero.mp4 + hero-poster.jpg into public/videos) -->
   <div class="hero-video-card">
-    <video controls poster="{{ asset('videos/hero-poster.jpg') }}" preload="none">
+    <video autoplay muted loop playsinline poster="{{ asset('videos/hero-poster.jpg') }}" preload="auto">
       <source src="{{ asset('videos/hero.mp4') }}" type="video/mp4">
     </video>
   </div>
