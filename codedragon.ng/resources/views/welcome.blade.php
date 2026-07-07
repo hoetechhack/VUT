@@ -520,6 +520,7 @@
       </div>
       <div class="footer-col">
         <h4>Legal & Support</h4>
+        <a href="/about">About Us</a>
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms">Terms & Conditions</a>
         <a href="/refund-policy">Refund Policy</a>

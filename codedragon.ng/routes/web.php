@@ -25,6 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::view('/about', 'legal.about')->name('about');
 Route::view('/privacy-policy', 'legal.privacy')->name('privacy');
 Route::view('/terms', 'legal.terms')->name('terms');
 Route::view('/refund-policy', 'legal.refund')->name('refund');
