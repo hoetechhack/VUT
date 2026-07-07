@@ -41,17 +41,24 @@
             <x-input-error :messages="$errors->get('password_confirmation')" style="margin-top: 6px; color: #ef4444; font-size: 0.8rem; font-weight: 700;" />
         </div>
 
+        <!-- Terms Acceptance -->
+        <div style="margin-bottom: 1.5rem;">
+            <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; font-weight: 600; color: var(--muted); cursor: pointer;">
+                <input type="checkbox" name="terms" value="1" {{ old('terms') ? 'checked' : '' }} required style="margin-top: 3px;" />
+                <span>
+                    I agree to the
+                    <a href="/terms" target="_blank" style="color: var(--purple); font-weight: 800; text-decoration: none;">Terms & Conditions</a>
+                    and
+                    <a href="/privacy-policy" target="_blank" style="color: var(--purple); font-weight: 800; text-decoration: none;">Privacy Policy</a>
+                </span>
+            </label>
+            <x-input-error :messages="$errors->get('terms')" style="margin-top: 6px; color: #ef4444; font-size: 0.8rem; font-weight: 700;" />
+        </div>
+
         <button type="submit" class="bsub">
             {{ __('Get Started') }}
         </button>
 
-        <div style="margin-top: 1.25rem;">
-            <a href="/auth/google/redirect" class="google-btn">
-                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20" alt="Google">
-                {{ __('Sign up with Google') }}
-            </a>
-        </div>
-        
         <div style="margin-top: 2rem; pt: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
             <p style="font-size: 0.85rem; font-weight: 600; color: var(--muted);">
                 Already have an account? 

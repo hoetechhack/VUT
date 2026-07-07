@@ -44,13 +44,6 @@
             {{ __('Log In') }}
         </button>
 
-        <div style="margin-top: 1.5rem;">
-            <a href="/auth/google/redirect" class="google-btn">
-                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20" alt="Google">
-                {{ __('Continue with Google') }}
-            </a>
-        </div>
-        
         <div style="margin-top: 2rem; pt: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
             <p style="font-size: 0.85rem; font-weight: 600; color: var(--muted);">
                 Don't have an account? 

@@ -31,9 +31,9 @@ Route::view('/terms', 'legal.terms')->name('terms');
 Route::view('/refund-policy', 'legal.refund')->name('refund');
 Route::view('/contact', 'legal.contact')->name('contact');
 
-// Social Auth
-Route::get('/auth/google/redirect', [GoogleAuthController::class, 'redirect'])->name('google.redirect');
-Route::get('/auth/google/callback', [GoogleAuthController::class, 'callback'])->name('google.callback');
+// Social Auth (disabled)
+// Route::get('/auth/google/redirect', [GoogleAuthController::class, 'redirect'])->name('google.redirect');
+// Route::get('/auth/google/callback', [GoogleAuthController::class, 'callback'])->name('google.callback');
 
 // OTP Verification (Guest/Auth)
 Route::get('/verify-otp', [OtpController::class, 'show'])->name('otp.show');
